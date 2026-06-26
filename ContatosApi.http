@@ -3,4 +3,41 @@
 GET {{ContatosApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
+
+### Listar todos os contatos
+GET {{ContatosApi_HostAddress}}/api/Contato
+Accept: application/json
+
+###
+
+### Buscar contatos filtrando por nome
+GET {{ContatosApi_HostAddress}}/api/Contato?busca=Henrique
+Accept: application/json
+
+###
+
+### Criar um novo contato 
+POST {{ContatosApi_HostAddress}}/api/Contato
+Content-Type: application/json
+
+{
+  "nome": "Henrique",
+  "telefone": "16999999999"
+}
+
+### Atualizar um contato existente
+PUT {{ContatosApi_HostAddress}}/api/Contato/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Nicole",
+  "telefone": "16988888888"
+}
+
+
+### Deletar um contato existente
+DELETE {{ContatosApi_HostAddress}}/api/Contato/1
+Content-Type: application/json
+
 ###
