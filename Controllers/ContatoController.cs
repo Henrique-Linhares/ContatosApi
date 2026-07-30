@@ -2,7 +2,7 @@
 using ContatosApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Linq; // O LINQ vive aqui!
+using System.Linq; 
 
 namespace ContatosApi.Controllers
 {
